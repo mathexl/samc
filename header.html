@@ -1,0 +1,509 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+
+
+    header{
+      width:100%;
+      height:100px;
+      position:relative;
+      z-index:30;
+
+    }
+
+    header .leftlinks{
+      left:0px;
+      text-align:right;
+      padding-right:10px;
+      box-sizing: border-box;
+      width: calc(50% - 100px);
+      height: 20px;
+      position: absolute;
+      bottom:22px;
+      font-family:Rambla, PT Sans Narrow, PT-Sans-Narrow, sans-narrow, Lato, sans-serif;
+      font-size:16px;
+      color:teal;
+    }
+
+    header .leftlinks > a {
+      text-decoration: none;
+      margin-left:2.5%;
+      margin-right:2.5%;
+      color: teal;
+    }
+
+    header * > a:hover {
+      opacity:.5;
+    }
+
+    header .rightlinks{
+      right:0px;
+      text-align:left;
+      padding-left:10px;
+      box-sizing: border-box;
+      width: calc(50% - 100px);
+      height: 20px;
+      position: absolute;
+      bottom:22px;
+      font-family:Rambla, PT Sans Narrow, PT-Sans-Narrow, sans-narrow, Lato, sans-serif;
+      font-size:16px;
+      color:teal;
+    }
+
+    header .rightlinks > a {
+      text-decoration: none;
+      margin-left:2.5%;
+      margin-right:2.5%;
+      color: teal;
+    }
+
+    header > img {
+      width:200px;
+      height:200px;
+      margin-left:48%;
+      margin-left:calc(50% - 100px);
+      background-color:white;
+      z-index:2;
+      position:relative;
+      border-radius:100%;
+    }
+
+    header > .underline{
+      position:absolute;
+      z-index:1;
+      width:100%;
+      height:10px;
+      bottom:0px;
+      left:0px;
+      background-color: teal;
+    }
+
+    body{
+      margin:0px;
+      padding:0px;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    .red{
+      color: #CE282C !important;
+    }
+
+    .yellow{
+      color: #FECC2B !important;
+    }
+
+    .teal{
+      color: #159776 !important;
+    }
+
+    .purple{
+      color: #624A70 !important;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="leftlinks">
+      <a href="" class="red">ABOUT</a>
+      <a href="" class="purple">THEME</a>
+      <a href="" class="yellow">PROGRAM</a>
+      <a href="" class="teal">SPEAKERS</a>
+
+
+    </div>
+    <div class="rightlinks">
+      <a href="" class="yellow">FAQ</a>
+
+      <a href="" class="red">LOGISTICS</a>
+      <a href="" class="teal">SPEAKERS</a>
+
+      <a href="" class="purple">THE TEAM</a>
+    </div>
+    <div class="underline"></div>
+    <img class="logo" src="images/sail_logo.png">
+  </header>
+
+  <style>
+  section[name="main"]{
+    width:100%;
+    height: 480px;
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+  }
+
+  section[name="main"] > .cover{
+    z-index:2;
+    background-color: white;
+    width:100%;
+    background-size:cover;
+    background-position: center;
+    height: 200%;
+    top:-135%;
+    left:-10.3%;
+    right:auto;
+    -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  section[name="main"] > .photowall{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+  }
+
+  section[name="main"] > .photowall > .prof_1_1{
+    width:12.5%;
+    height:160px;
+    background-color:red;
+    float:left;
+    background-size:cover;
+    background-position: top center;
+  }
+
+  section[name="main"] > .photowall> .prof_1_2{
+    width:25%;
+    height:160px;
+    background-color:red;
+    float:left;
+    background-size:cover;
+    background-position: top center;
+  }
+
+  section[name="main"] > h1{
+    width:70%;
+    margin-top:105px;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:45px;
+    font-weight: 300;
+    font-family:Lato-Thin, lato-thin, Lato, sans-serif;
+    color:teal;
+    text-align: center;
+    margin-bottom: 0px;
+    z-index:5;
+    position:relative;
+  }
+  section[name="main"] > h2{
+    width:70%;
+    font-style:italic;
+    margin-top:10px;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:26px;
+    font-weight: 400;
+    font-family:Lato, sans-serif;
+    text-align: center;
+    color:teal;
+    margin-bottom: 0px;
+    z-index: 5;
+    position:relative;
+  }
+  section[name="main"] > h3{
+    width:70%;
+    margin-top:3px;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:16px;
+    font-weight: 600;
+    font-family:Lato, sans-serif;
+    text-align: center;
+    color:#444;
+    margin-bottom: 0px;
+    z-index: 5;
+    position:relative;
+  }
+
+  section[name="main"] > h4{
+    width:70%;
+    margin-top:25px;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:12px;
+    font-weight: 600;
+    font-family:Lato, sans-serif;
+    text-align: center;
+    color:#ddd;
+    margin-bottom: 0px;
+    z-index: 5;
+    position:relative;
+  }
+
+  .list_of_names{
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Lato, sans-serif;
+    color: #888;
+    text-align:center;
+    font-size:11px;
+    z-index: 5;
+    position: relative;
+  }
+
+  .list_of_names > span{
+    text-transform: uppercase;
+    text-align:right;
+    width:50%;
+    float:left;
+     white-space: nowrap;
+     padding-left:3px;
+     padding-right:3px;
+     box-sizing: border-box;
+  }
+
+  .list_of_names > span:nth-of-type(2n){
+    text-align:left;
+  }
+
+
+  </style>
+  <section name="main">
+    <h1>South Asian Millennials Conference</h1>
+    <h2 class="red">A Spotlight on Change</h2>
+    <h3 class="">February 14th-16th, 2016</h3>
+    <h4>FEATURING</h4>
+    <div class="list_of_names">
+      <span>DR. SASHI KAPOOR</span>
+      <span>Mrunalini Deshmukh</span>
+      <span>Vidya Sri</span>
+      <span>Aditi Bhattacharya</span>
+      <span>Dr. Zubia Mumtaz</span>
+      <span>Dr. Omrana Pasha</span>
+      <span>Abed Mouiduddin</span>
+      <span>Nadia Manzoor</span>
+      <span>Ghalib Shriaz Dhalla</span>
+      <span>Samra Habib</span>
+      <span>Gurjot Kaur</span>
+      <span>Mallika Walia</span>
+      <span>Jaipreet Sethi</span>
+      <span>Farhat Rahman</span>
+      <span>Aniruddha Dutta</span>
+      <span>Krish Bhatt</span>
+      <span>Joya Ahmad</span>
+      <span>Sonia Katyal</span>
+      <span>Samra Habib</span>
+      <span>Shenila Khoja­Moolji</span>
+      <span>Sarika Kumar</span>
+    </div>
+    <div class="cover">
+
+    </div>
+    <div class="photowall">
+    <div class="prof_1_1" style="background-image:url('images/ghalib.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/krish.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/samra.jpg')"></div>
+
+
+    <div class="prof_1_1" style="background-image:url('images/skk.official.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/zubia.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/FullSizeRender.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/mrunalini.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/gurjot.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/omrana.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/shenila.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/vidya.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/ruchi.jpg')"></div>
+
+
+    <!-- must replace below -->
+    <div class="prof_1_1" style="background-image:url('images/ghalib.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/krish.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/samra.jpg')"></div>
+
+
+    <div class="prof_1_1" style="background-image:url('images/skk.official.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/zubia.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/FullSizeRender.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/mrunalini.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/gurjot.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/omrana.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/shenila.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/vidya.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/ruchi.jpg')"></div>
+
+    <div class="prof_1_1" style="background-image:url('images/omrana.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/shenila.jpg')"></div>
+    <div class="prof_1_1" style="background-image:url('images/vidya.png')"></div>
+    <div class="prof_1_1" style="background-image:url('images/ruchi.jpg')"></div>
+    </div>
+  </section>
+
+  <style>
+  section[name="pricing"]{
+    width:100%;
+    height:auto;
+    background-color: coral;
+    background: linear-gradient(216deg, #ce282c, #ca9e31);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    display:inline-block;
+  }
+
+  section[name="pricing"] > h1{
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    color:white;
+    font-weight: 400;
+    text-align:center;
+    font-size:30px;
+    font-family:Lato, sans-serif;
+    margin-top:15px;
+    margin-bottom:0px;
+  }
+
+  section[name="pricing"] > p{
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    color:white;
+    font-weight: 500;
+    text-align:center;
+    font-size:14px;
+    font-family:Lato, sans-serif;
+    margin-top:0px;
+    margin-bottom:20px;
+  }
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+  </style>
+  <section name="pricing">
+    <h1>Pricing?</h1>
+    <p>
+      Early registration will cost $25 for an All Access Student Pass and $35 for an All Access Guest
+
+      Pass. Late registration will cost $35 for an All Access Student Pass and $45 for an All Access
+
+      Guest Pass. In addition, single event passes will be sold for $7.
+    </p>
+  </section>
+
+
+  <style>
+    body{
+        margin:0px;
+        padding:0px;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    footer{
+      width:100%;
+      min-height: 120px;
+      height: auto;
+      background-color:black;
+      padding-bottom:60px;
+
+    }
+
+    footer > .col5{
+      width:25%;
+      float:left;
+      margin-top:15px;
+    }
+
+    footer > .col5.pushdown {
+      margin-top:35px;
+    }
+
+    footer > .col5 > a{
+      color:white;
+      text-decoration: none;
+      font-family:Lato, sans-serif;
+      font-size:12px;
+      width:100%;
+      margin-top:6px;
+      display:block;
+      text-align:left;
+    }
+
+    footer > .col5 > a:hover{
+      opacity:.6;
+    }
+
+    footer > .col5 > .footerlogo{
+      width:100px;
+      display:inline-block;
+      margin-right:25%;
+      float:right;
+    }
+
+    footer > .col5 > .socialmedia{
+      width:100px;
+      display:inline-block;
+      margin-right:25%;
+      float:right;
+      clear:both;
+      color:white;
+      margin-top:6px;
+      text-align:center;
+    }
+
+    footer > .col5 > .socialmedia > i{
+      margin-left:10px;
+      margin-right:10px;
+    }
+  </style>
+  <footer>
+
+    <div class="col5">
+      <img src="images/footer.png" class="footerlogo">
+      <div class="socialmedia">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </div>
+    <div class="col5 pushdown">
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+    </div>
+    <div class="col5 pushdown">
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+    </div>
+    <div class="col5 pushdown">
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
